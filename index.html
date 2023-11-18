@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JQuery Practice</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link href='https://fonts.googleapis.com/css?family=Open Sans' rel='stylesheet'>
+</head>
+<body>
+    <div class="title">
+        <h1>Frequently Asked Questions</h1>
+    </div>
+    <div class="accordion">
+        <!-- FAQ 1 -->
+        <div class="accordion-item">
+            <button class="accordion-button" id="accordion-button-1">
+                <span>What is FAQ?</span>
+                <span class="icon">
+                    <img src="down-arrow.png" class="down" id="down1">
+                </span>
+            </button>
+            <div class="accordion-content" id="accordion-content-1">
+                <p>A frequently asked questions (FAQ) list is often used in articles, websites, email lists, and online forums where common questions tend to recur, for example through posts or queries by new users related to common knowledge gaps. The purpose of a FAQ is generally to provide information on frequent questions or concerns; however, the format is a useful means of organizing information, and text consisting of questions and their answers may thus be called a FAQ regardless of whether the questions are actually frequently asked.</p>
+            </div>
+        </div>
+
+        <!-- FAQ 2 -->
+        <div class="accordion-item">
+            <button class="accordion-button" id="accordion-button-2">
+                <span>What does the fox say?</span>
+                <span class="icon">
+                    <img src="down-arrow.png" class="down" id="down2">
+                </span>
+            </button>
+            <div class="accordion-content" id="accordion-content-2">
+                <p>"Ring-ding-ding-ding-dingeringeding! Gering-ding-ding-ding-dingeringeding! Gering-ding-ding-ding-dingeringeding!"</p>
+            </div>
+        </div>
+
+        <!-- FAQ 3 -->
+        <div class="accordion-item">
+            <button class="accordion-button" id="accordion-button-3">
+                <span>What is the best ice cream flavor?</span>
+                <span class="icon">
+                    <img src="down-arrow.png" class="down" id="down3">
+                </span>
+            </button>
+            <div class="accordion-content" id="accordion-content-3">
+                <p>Cookies and Cream, no doubt.</p>
+            </div>
+        </div>
+
+        <!-- FAQ 4 -->
+        <div class="accordion-item">
+            <button class="accordion-button" id="accordion-button-4">
+                <span>Who created this html?</span>
+                <span class="icon">
+                    <img src="down-arrow.png" class="down" id="down4">
+                </span>
+            </button>
+            <div class="accordion-content" id="accordion-content-4">
+                <p>The creator of this html is Dennis William from class L1BC, and he wishes you all the best in life :></p>
+            </div>
+        </div>
+
+        <!-- FAQ 5 -->
+        <div class="accordion-item">
+            <button class="accordion-button" id="accordion-button-5">
+                <span>Would we see each other again?</span>
+                <span class="icon">
+                    <img src="down-arrow.png" class="down" id="down5">
+                </span>
+            </button>
+            <div class="accordion-content" id="accordion-content-5">
+                <p>We would! Just meet me in Binus FX because I'm usually there most of the time.</p>
+            </div>
+        </div>
+    </div>
+    <div class="title-2">
+        <img src="denn-kitchen-logo.png" id="kitchen-logo">
+    </div>
+    <div class="menu">
+        <div class="menu-item" id="pork-rice-menu">
+            <span class="menu-title"><b>Pork Rice</b></span> <br><br>
+            <span class="food">
+                <img src="pork-rice.jpg" id="pork-rice">
+            </span>
+            <div class="menu-content" id="menu-content-1">
+                <p>Savory rice dish featuring tender pieces of pork, infused with flavorful seasonings.</p>
+            </div>
+        </div>
+        <div class="menu-item" id="oreo-milkshake-menu">
+            <span class="menu-title"><b>Oreo Milkshake</b></span> <br><br>
+            <span class="food">
+                <img src="oreo-milkshake.jpg" id="oreo-milkshake">
+            </span>
+            <div class="menu-content" id="menu-content-2">
+                <p>Creamy blend of vanilla ice cream and crushed Oreo cookies, creating a decadent and indulgent milkshake.</p>
+            </div>
+        </div>
+        <div class="menu-item" id="iced-latte-menu">
+            <span class="menu-title"><b>Iced Latte</b></span> <br><br>
+            <span class="food">
+                <img src="iced-latte.jpg" id="iced-latte">
+            </span>
+            <div class="menu-content" id="menu-content-3">
+                <p>Chilled espresso mixed with cold milk, served over ice for a refreshing experience.</p>
+            </div>
+        </div>
+    </div>
+    <div class="pop-up">
+        <div class="pop-up-item" id="pork-rice-popup">
+            <img src="pork-rice.jpg" id="pork-rice-img">
+            <div class="pop-up-content">
+                <p>Pork rice is a delectable symphony of flavors and textures, where succulent pieces of tender pork meet the comforting embrace of perfectly cooked rice. Picture this: juicy, well-seasoned pork, whether grilled to caramelized perfection, stir-fried to a savory crisp, or slow-cooked until it melts in your mouth. Each forkful reveals a harmonious blend of savory and subtly sweet notes, heightened by the aromatic dance of spices and herbs that infuse the dish.</p>
+            </div>
+        </div>
+        <div class="pop-up-item" id="oreo-milkshake-popup">
+            <img src="oreo-milkshake.jpg" id="oreo-milkshake-img">
+            <div class="pop-up-content">
+                <p>The Oreo milkshake is a delightful concoction that seamlessly blends the classic flavors of velvety vanilla ice cream and the irresistible crunch of Oreo cookies. Picture a thick and creamy shake that's luxuriously smooth, with each sip delivering a perfect balance of sweetness and decadence.</p>
+            </div>
+        </div>
+        <div class="pop-up-item" id="iced-latte-popup">
+            <img src="iced-latte.jpg" id="iced-latte-img">
+            <div class="pop-up-content">
+                <p>An iced latte is a delightful, refreshing beverage that combines the rich, velvety notes of espresso with the cool, soothing embrace of ice-cold milk. As you take your first sip, the robust and aromatic essence of freshly brewed espresso dances on your palate, awakening your senses with a bold, yet smooth intensity.</p>
+            </div>
+        </div>
+    </div>
+    <div class="phone-number">
+        <p>Phone: +62 6942 06969 <br>
+        *yes i also took all of the pictures myself :></p>
+    </div>
+    <div class="title-3">
+        <h1>Image Gallery with filters</h1>
+    </div>
+    <div class="search-bar">
+        <input type="text" id="search-bar" placeholder="What would you like to find?">
+        <div class="search-bar-buttons">
+            <div class="button">
+                <button id="nature">Nature</button>
+            </div>
+            <div class="button">
+                <button id="travel">Travel</button>
+            </div>
+            <div class="button">
+                <button id="animal">Animals</button>
+            </div>
+        </div>
+        <div class="gallery">
+            <div class="row-1">
+                <div class="nature-pic">
+                    <img src="nature-1.jpg" id="nature-1">
+                </div>
+                <div class="travel-pic">
+                    <img src="travel-1.png" id="travel-1">
+                </div>
+                <div class="animal-pic">
+                    <img src="animal-1.jpeg" id="animal-1">
+                </div>
+            </div>
+            <div class="row-2">
+                <div class="animal-pic">
+                    <img src="animal-2.jpg" id="animal-2">
+                </div>
+                <div class="nature-pic">
+                    <img src="nature-2.jpg" id="nature-2">
+                </div>
+                <div class="travel-pic">
+                    <img src="travel-2.jpeg" id="travel-2">
+                </div>
+            </div>
+            <div class="row-3">
+                <div class="travel-pic">
+                    <img src="travel-3.jpg" id="travel-3">
+                </div>
+                <div class="animal-pic">
+                    <img src="animal-3.jpg" id="animal-3">
+                </div>
+                <div class="nature-pic">
+                    <img src="nature-3.jpg" id="nature-3">
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

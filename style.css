@@ -1,0 +1,253 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-size: 1rem;
+    font-family: 'Open Sans';
+    background-color: beige;
+}
+
+/* FAQ Accordion */
+
+.title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+}
+
+.title h1 {
+    margin: 40px auto 40px;
+}
+
+.accordion {
+    margin: 0 auto;
+    padding: 64px;
+    width: 768px;
+    border-bottom: 3px solid gray;
+}
+
+.accordion-item {
+    border-bottom: 1px solid gray;
+}
+
+.accordion-item button {
+    position: relative;
+    text-align: left;
+    display: block;
+    width: 100%;
+    padding: 1em 0;
+    color: #7288a2;
+    font-size: 1.15rem;
+    border: none;
+    outline: none;
+    background-color: beige;
+}
+
+.accordion-item button:hover {
+    cursor: pointer;
+}
+
+.accordion-content {
+    font-size: 1rem;
+    padding-bottom: 20px;
+}
+
+.accordion-button {
+    display: flex !important;
+    justify-content: space-between !important;
+}
+
+.down {
+    width: 2rem;
+}
+
+.rotate {
+    transition: 0.4s;
+    -webkit-transform: rotate(180deg);
+    -moz-transform: rotate(180deg);
+    -ms-transform: rotate(180deg);
+    -o-transform: rotate(180deg);
+}
+
+/* Denn's Kitchen */
+
+.title-2 {
+    margin: 40px auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #8E4739;
+    width: 100%;
+}
+
+#kitchen-logo {
+    height: 360px;
+}
+
+.menu, .phone-number{
+    margin: 200px auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 33.333%;
+}
+
+.menu-item {
+    margin: 0px 100px 0px 100px;
+    background-color: #FFA500;
+    padding: 30px;
+    border-radius: 8px;
+    color: white;
+    filter: none;
+    transition-duration: .3s;
+    transition-timing-function: ease-out;
+
+}
+
+#pork-rice, #oreo-milkshake, #iced-latte {
+    height: 260px;
+    width: auto;
+}
+
+.pop-up {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 33.333%;
+}
+
+.pop-up-item {
+    margin: 0px 100px 0px 100px;
+    background-color: #FFA500;
+    padding: 30px;
+    border-radius: 8px;
+    color: white;
+}
+
+#pork-rice-img, #oreo-milkshake-img, #iced-latte-img{
+    height: 480px;
+    width: auto;
+}
+
+#pork-rice-popup, #iced-latte-popup {
+    margin: -900px auto 0 1080px;
+}
+
+#oreo-milkshake-popup {
+    margin: -900px auto 0 60px;
+}
+.menu-item:hover {
+    transform:scale(1.25);
+}
+
+.menu:hover > .menu-item:not(:hover) {
+    filter:blur(3px);
+}
+
+.phone-number {
+    background-color: gray;
+    width: 100%;
+    padding: 20px 0 20px 0;
+    color: white;
+}
+        
+/* Image Gallery with filters */
+
+.title-3 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+}
+
+.title-3 h1 {
+    margin: 40px auto 40px;
+}
+
+.gallery img {
+    height:360px;
+    width: auto;
+    margin: 30px;
+    border-radius: 10px;
+}
+
+.gallery {
+    margin: 30px auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 33.333%;
+}
+
+#search-bar {
+    width:720px;
+    margin: 30px auto;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    border: none;
+    outline: none;
+    height: 5rem;
+    border-radius: 12px;
+}
+
+#search-bar::placeholder {
+    padding: 0;
+    font-family: 'Open Sans';
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+
+input[type=text] {
+    padding: 0 20px;
+    font-family: 'Open Sans';
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+
+.search-bar-buttons {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.button {
+    margin: auto 20px;
+}
+.button button {
+    width: 64px;
+    height: 36px;
+    background-color: lightgray;
+    border: none;
+    outline: none;
+}
+
+.button button:focus {
+    background-color: #00b4d8;
+}
+
+
+/* Responsive Design */
+
+@media (max-width: 768px) {
+    html, body {
+        overflow-x: hidden !important;
+    }
+    body {
+        margin: 0px !important;
+        align-items: center;
+    }
+    .accordion, .menu {
+        width: 100%;
+    }
+    .title h3 {
+        width: 90%;
+    }
+}
