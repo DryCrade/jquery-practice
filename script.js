@@ -111,9 +111,8 @@ $(document).ready(function(){
         $(".gallery img").hide();
         $("." + category + "-pic img").show();
     });
-
-
-
-
-
+    
+    $("#all").click(function () {
+        $(".gallery img").show();
+    });
 })
